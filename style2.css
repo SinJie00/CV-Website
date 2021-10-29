@@ -1,0 +1,546 @@
+/*Home Page*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div#wholecontainer, .contact{
+    background-image: url("../img/background2.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    padding: 10px 0;
+    color: rgb(0,0,57);
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5em;
+    color: rgb(25,25,112);
+}   
+
+nav.home{
+    background-color: rgb(69,177,232);
+    padding: 80px 0;
+}
+
+ul.topnav{
+    list-style-type: none;
+    margin-left: 100px;
+    text-align: center;
+}
+
+li.toplist{
+    float: left;
+}
+
+li.toplist a{
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+li.toplist a:hover{
+    color: rgb(0,48,143);
+    transition: 1s;
+}
+
+li.toplist a:active{
+    color: rgb(0,35,102);
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: block;
+    width: 25%;
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+#btn-container > button{
+    border: none;
+    color: black;
+    padding: 30px 57px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button#btn-style1{
+    background-color: pink;
+    font-size: 22px;
+}
+
+button#btn-style2{
+    background-color: lightskyblue;
+    font-size: 22px;
+}
+
+button#btn-style1:hover,button#btn-style1:active {
+    background-color: rgb(228,0,124);
+    color: white;
+}
+
+button#btn-style2:hover,button#btn-style2:active{
+    background-color: darkblue;
+    color: white;
+}
+
+footer{
+    background-color: rgb(69,177,232);  
+}
+
+.bottomnav{
+    list-style-type: none;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.logo img{
+    margin: 10px 30px;
+    width: 60px;
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
+.logo img:hover,.logo img:active{
+    transition: .1s;
+    box-shadow: 0 0 10px white;
+    border-radius: 50%;
+}
+
+.link a{
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 40px;
+}
+
+.link a:hover, .link:active{
+    text-shadow: 2px 2px 5px darkblue;
+}
+
+/*Profile Page*/
+
+#grid{
+    width: 65vw; 
+    height: 165vh;
+    margin: 0 auto;
+    background-color: #a1caf1;
+    display:grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: 45vh 40vh 45vh 35vh;
+    grid-template-areas: 
+    "profile education"
+    "contact education"
+    "skill activity"
+    "language hobby";
+}
+
+#grid div{
+    text-align: center;
+}
+
+#profile{
+    grid-area: profile;
+    border-right: 2px solid rgb(119,181,254);
+}
+
+#profile img{
+    margin: 25px auto 15px auto;
+    display: block;    
+    width: 13vw;
+    height: 30vh;
+    border: 5px solid deepskyblue;
+}
+
+.bold-center{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: rgb(0,0,128);
+}
+
+.regular{
+    color: #2a52be;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.block{
+    background-color: rgb(69,177,232);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact{
+    border-right: 2px solid rgb(119,181,254);
+    grid-area: contact;
+}
+
+.icon{
+    float: left;
+}
+
+.icon img{
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    margin: 22px 15px;
+}
+
+.icon a{ 
+    text-decoration: none;
+}
+
+#skill{
+    border-right: 2px solid rgb(119,181,254);
+    grid-area: skill;
+}
+
+#language{
+    border-right: 2px solid rgb(119,181,254);
+    grid-area: language;
+}
+
+#education{
+    grid-area: education;
+}
+
+#activity{
+    grid-area: activity;
+    margin-top: -70px;
+}
+
+#hobby{
+    grid-area: hobby;
+}
+
+#education hr,#activity hr{
+    border: 1px solid rgb(119,181,254);
+    width: 85%;
+}
+
+#education hr{
+    padding: 0 30%;
+    margin: 0px auto;
+}
+
+#activity hr{
+    margin: -10px auto 0 auto;
+}
+    
+#skill table,#language table{
+    margin-left: 20px;
+}
+
+#skill table td{
+    padding: 12px 0;
+    text-align: left;
+}
+  
+.bar{
+    display: inline-block;
+    background-color: white;
+    width:250px;
+    height:30px;
+    border: 2px solid #191970;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.skill-bar-90{
+    width: 90%;
+    height: 100%;
+    background-color: #120a8f;
+}
+
+.skill-bar-80{
+    width: 80%;
+    height: 100%;
+    background-color: #0f4d92;
+}
+
+.skill-bar-70{
+    width: 70%;
+    height: 100%;
+    background-color: #1560bd;
+}
+  
+.skill-bar-60{
+    width: 60%;
+    height: 100%;
+    background-color: #007fbf;
+}
+
+#language table td{
+    padding: 25px 0;
+    text-align: left;
+}
+
+.language-bar-100{
+    width: 100%;
+    height: 100%;
+    background-color: #191970;;
+}
+
+.language-bar-90{
+    width: 90%;
+    height: 100%;
+    background-color: #120a8f;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(0,0,128);
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#education div .title{
+    padding: 20px 0 10px 90px;
+}
+
+#activity div .title, #hobby div .title{
+    padding: 10px 0 10px 90px;
+}
+
+#education ul, #activity ul,#hobby ul{
+    padding-left: 100px;
+    padding-bottom: 2.5em;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+#education ul li, #activity ul li,#hobby ul li{
+    position: relative;
+}
+
+#education ul li:before, #activity ul li:before, #hobby ul li:before{
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: -25px;
+    width: 8px;
+    height: 9px;
+    border-radius: 50%;
+    border: 2px solid #002366;
+}
+
+#education ul li:after,#activity ul li:after{
+  content: "";
+  position: absolute;
+  top: 19px;
+  left: -20px;
+  width: 2px;
+  background: #002366;
+}
+
+#education ul li:first-child::after{
+    height: 243px;
+}
+
+#education ul li:nth-child(2):after{
+    height: 212px;
+}
+
+#education ul li:last-child::after{
+    height: 108px;
+}
+
+#activity ul li:first-child::after{
+    height: 245px;
+}
+
+#activity ul li:nth-child(2):after{
+    height: 117px;
+}
+
+#activity ul li:after{
+    height: 70px;
+}
+
+#education ul li .date, #activity ul li .date{
+    text-align: left;
+    color: #002395;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#education ul li .info, #activity ul li .info{
+   margin-bottom: 20px;
+}
+
+.info p, #hobby ul li{
+    text-align: left;
+    color: #041690;
+    font-size: 22px;
+    padding: 3px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#hobby{
+    margin: 80px 0;
+}
+
+#hobby ul li{
+    margin: 20px 0;
+}
+
+/*Contact Me Page*/
+
+.contact{
+    height: 120vh;
+}
+
+.contact h1{
+    color: #120a8f;
+    font-size: 3em;
+    padding: 35px 0;
+}
+
+.contact p{
+    color: #191970;
+    text-align: center;
+    font-size: 25px;
+}
+
+form{
+    margin: 50px auto;
+    width: 700px;
+    height: 95vh;
+    border-radius: 50px;
+    background-color: #7cb9e8;
+    border: 5px solid #0073cf;
+}
+
+td:first-child{
+    margin-top: 30px;
+}
+
+td{
+    padding: 17px 35px;
+}
+
+  
+label{
+    font-weight: bold;
+    font-family:'Lucida Sans';
+    font-size: 20px;
+    color: #333399;
+}
+
+label i{
+    color: #1d2951;
+}
+
+::placeholder{
+    opacity: 1;
+    color: grey;
+}
+
+input[type=radio]{
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+input + span{
+    padding-left: 5px;
+    padding-right: 15px;
+}
+ 
+input[type=text],input[type=email],input[type=date],input[type=tel],textarea{
+    padding: 15px;
+    width: 350px;
+    border-radius: 25px;
+    border: 2px solid #0073cf;
+    background-color: #45b1e8;
+    color: #002366;
+    font-size: 15px;
+    outline: none;
+}
+
+select{
+    padding: 15px;
+    width: 170px;
+    border-radius: 5px;
+    border: 2px solid #0073cf;
+    background-color: #45b1e8;
+    color: #002366;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+td.message{
+    vertical-align: top;
+}
+  
+input[type=submit]{
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    left: 240px;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 60px;
+    background-color: lightskyblue;
+    border: 2px solid #0047ab;
+    color: #23297a;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+input[type=submit]:hover, input[type=submit]:active{
+    box-shadow: inset 0 0 10px rgb(115,194,251), 0 0 10px #0073cf;
+    transition: 0.6s;
+    background-color: #73c2fb;
+    text-shadow: 1px 1px 2px white;
+}
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+

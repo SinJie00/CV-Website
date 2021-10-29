@@ -1,0 +1,530 @@
+/*Home Page*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+div#wholecontainer, .contact{
+    background-image: url("../img/background1.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1{
+    text-align: center;
+    color:maroon;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.2em;
+    color:mediumvioletred;
+}
+
+nav.home{
+    background-color: rgb(255,145,175); 
+    padding: 49px 0px;
+}
+
+ul.topnav{
+    list-style-type: none;
+    margin-left: 75%;
+}
+
+li.toplist{
+    float: left;
+}
+
+li.toplist a{
+    display: inline-block;
+    padding-top: 15px;
+    padding-right: 90px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+li.toplist a:hover{
+    color: maroon;
+}
+
+li.toplist a:active{
+    color: hotpink;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    display: block;
+    width: 18.5%;
+    border-radius: 50%;
+}
+
+#btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+#btn-container > button{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button#btn-style1{
+    background-color: lightpink;
+}
+
+button#btn-style2{
+    background-color: lightskyblue;
+}
+
+button#btn-style1:hover,button#btn-style1:active {
+    background-color: rgb(228,0,124);
+    color: black;
+}
+
+button#btn-style2:hover,button#btn-style2:active{
+    background-color: deepskyblue;
+    color: black;
+}
+
+footer{
+    background-color: rgb(255,145,175);   
+}
+
+.bottomnav{
+    list-style-type: none;
+    text-align: center;
+}
+
+.logo img{
+    margin: 10px 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.logo img:hover,.logo img:active{
+    transition: .1s;
+    box-shadow: 0 0 15px rgb(228,0,124);
+    border-radius: 50%;
+}
+
+.link a{
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+.link a:hover, .link:active{
+    text-shadow: 2px 2px 5px rgb(255,20,147);
+}
+
+/*Profile Page*/
+
+#grid{
+    width: 65vw; 
+    height: 165vh;
+    margin: 0 auto;
+    background-color: pink;
+    display:grid;
+    grid-template-columns: 35% auto;
+    grid-template-rows: 45vh 40vh 45vh 35vh;
+    grid-template-areas: 
+    "profile education"
+    "contact education"
+    "skill activity"
+    "language hobby";
+}
+
+#grid div{
+    text-align: center;
+}
+
+#profile{
+    grid-area: profile;
+    border-right: 2px solid hotpink;
+}
+
+#profile img{
+    margin: 25px auto 15px auto;
+    display: block;    
+    width: 13vw;
+    height: 30vh;
+    border: 5px solid rgb(252,137,172);
+}
+
+.bold-center{
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    color: rgb(228,0,124);
+}
+
+.regular{
+    color: maroon;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.block{
+    background-color: rgb(252,137,172);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact{
+    border-right: 2px solid hotpink;
+    grid-area: contact;
+}
+
+.icon{
+    float: left;
+}
+
+.icon img{
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    margin: 22px 15px;
+}
+
+.icon a{ 
+    text-decoration: none;
+}
+
+#skill{
+    border-right: 2px solid hotpink;
+    grid-area: skill;
+}
+
+#language{
+    border-right: 2px solid hotpink;
+    grid-area: language;
+}
+
+#education{
+    grid-area: education;
+}
+
+#activity{
+    grid-area: activity;
+    margin-top: -70px;
+}
+
+#hobby{
+    grid-area: hobby;
+}
+
+#education hr,#activity hr{
+    border: 1px solid hotpink;
+    width: 85%;
+}
+
+#education hr{
+    padding: 0 30%;
+    margin: 0px auto;
+}
+
+#activity hr{
+    margin: -10px auto 0 auto;
+}
+    
+#skill table,#language table{
+    margin-left: 20px;
+}
+
+#skill table td{
+    padding: 12px 0;
+    text-align: left;
+}
+  
+.bar{
+    display: inline-block;
+    background-color: white;
+    width:250px;
+    height:30px;
+    padding: 2px;
+    border: 2px solid hotpink;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.skill-bar-90{
+    width: 90%;
+    height: 100%;
+    background-color: #ff0f87;
+}
+
+.skill-bar-80{
+    width: 80%;
+    height: 100%;
+    background-color: #ff61b0; 
+}
+
+.skill-bar-70{
+    width: 70%;
+    height: 100%;
+    background-color: #ff70b8;
+}
+  
+.skill-bar-60{
+    width: 60%;
+    height: 100%;
+    background-color: #ffa3d1;
+}
+
+#language table td{
+    padding: 25px 0;
+    text-align: left;
+}
+
+.language-bar-100{
+    width: 100%;
+    height: 100%;
+    background-color: #ff0f87;
+}
+
+.language-bar-90{
+    width: 90%;
+    height: 100%;
+    background-color: #ff61b0;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 30px;
+    color: #ff3399;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#education div .title{
+    padding: 20px 0 10px 90px;
+}
+
+#activity div .title, #hobby div .title{
+    padding: 10px 0 10px 90px;
+}
+
+#education ul, #activity ul,#hobby ul{
+    padding-left: 100px;
+    padding-bottom: 2.5em;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+#education ul li, #activity ul li,#hobby ul li{
+    position: relative;
+}
+
+#education ul li:before, #activity ul li:before, #hobby ul li:before{
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -25px;
+  width: 8px;
+  height: 9px;
+  border-radius: 50%;
+  border: 2px solid hotpink;
+}
+
+#education ul li:after,#activity ul li:after{
+  content: "";
+  position: absolute;
+  top: 21px;
+  left: -20px;
+  width: 2px;
+  background: hotpink;
+}
+
+#education ul li:first-child::after{
+    height: 245px;
+}
+
+#education ul li:nth-child(2):after{
+    height: 214px;
+}
+
+#education ul li:last-child::after{
+    height: 110px;
+}
+
+#activity ul li:first-child::after{
+    height: 245px;
+}
+
+#activity ul li:nth-child(2):after{
+    height: 117px;
+}
+
+#activity ul li:after{
+    height: 70px;
+}
+
+#education ul li .date, #activity ul li .date{
+    text-align: left;
+    color: maroon;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#education ul li .info, #activity ul li .info{
+   margin-bottom: 20px;
+}
+
+.info p, #hobby ul li{
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    color: maroon;
+    font-size: 22px;
+    padding: 3px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#hobby{
+    margin: 80px 0;
+}
+
+#hobby ul li{
+    margin: 15px 0;
+}
+
+/*Contact Me Page*/
+
+.contact{
+    height: 113vh;
+}
+
+.contact h1{
+    color: #ff2491;
+    font-size: 2.5em;
+    padding: 35px 0;
+}
+
+.contact p{
+    color: maroon;
+    text-align: center;
+    font-size: 25px;
+}
+
+form{
+    margin: 50px auto;
+    width: 700px;
+    height: 85vh;
+    background-color: #ffadd6;
+    border: 4px solid hotpink;
+}
+
+td{
+    padding: 17px 35px;
+}
+
+  
+label{
+    font-weight: bold;
+    font-family: 'Trebuchet MS','Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(215,24,104);
+}
+
+label i{
+    color: maroon;
+}
+
+::placeholder{
+    opacity: 1;
+    color: grey;
+}
+
+input[type=radio]{
+    cursor: pointer;
+    padding-left: 5px;
+}
+
+input + span{
+    padding-left: 5px;
+    padding-right: 15px;
+}
+ 
+input[type=text],input[type=email],input[type=date],input[type=tel],textarea{
+    padding: 15px;
+    width: 350px;
+    border-radius: 20px;
+    border: none;
+    background-color: #ffd6eb;
+    outline: none;
+}
+
+select{
+    padding: 15px;
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffd6eb;
+    cursor: pointer;
+}
+
+td.message{
+    vertical-align: top;
+}
+  
+input[type=submit]{
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    left: 240px;
+    border-radius: 50px;
+    border: none;
+    padding: 20px 60px;
+    background-color: hotpink;
+    color: lavenderblush;
+    font-size: 20px;
+    font-weight: bold;
+}
+  
+input[type=submit]:hover, input[type=submit]:active{
+    box-shadow: inset 0 0 10px lavenderblush, 0 0 10px white;
+    text-shadow: 1px 1px 2px lightpink;
+}
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+
+
