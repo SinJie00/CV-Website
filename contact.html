@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact Me</title>
+    <link id="style" rel="stylesheet" type="text/css" href="css/style1.css">
+    <script type="text/javascript">
+        if(sessionStorage.getItem("theme")!=null){
+             document.getElementById('style').href = 'css/'+sessionStorage.getItem("theme")+'.css';
+        }
+        function changeStyle1() {
+            var theme = document.getElementById('style');
+            theme.href = "css/style1.css";
+            sessionStorage.setItem("theme","style1");
+        };
+        function changeStyle2() {
+            var theme = document.getElementById('style');
+            theme.href = "css/style2.css";
+            sessionStorage.setItem("theme","style2");
+        };
+    </script>
+</head>
+
+<body>
+    <nav class="home">
+        <ul class="topnav">
+            <li class="toplist"><a href="home.html">Home</a></li>
+            <li class="toplist"><a href="profile.html">Profile</a></li>
+            <li class="toplist"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact">
+        <h1>Contact Me</h1>
+        <p>Hi there! Let's fill up the form to get in touch with me! </p>
+        <form class="form" method="post">
+            <table>
+                <tr class="name">
+                    <td><label for="name">Full Name<i>*</i></label></td>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender</label></td>
+                    <td><input type="radio" name="gender" value="male"><span>Male</span>
+                        <input type="radio" name="gender" value="female"><span>Female</span>
+                        <input type="radio" name="gender" value="none"><span>Prefer Not To Say</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email<i>*</i></label></td>
+                    <td><input type="email" name="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number<i>*</i></label></td>
+                    <td><input type="tel" name="phone" id="phone" value="+60" placeholder="+60182321688"></td>
+                </tr>
+                <tr>
+                    <td><label for="date">Date Of Birth</label></td>
+                    <td><input type="date" name="date" id="date"></td>
+                </tr>
+                <tr>
+                    <td><label for="subject">Message Subject<i>*</i></label></td>
+                    <td>
+                        <select id="subject" name="subject">
+                        <option value="General Enquiry">General Enquiry</option>
+                        <option value="Work Enquiry">Work Enquiry</option>
+                        <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="message"><label for="message">Message<i>*</i></label></td>
+                    <td><textarea name="message" rows="10" cols="60" placeholder="Kindly write down your message here"></textarea></td>
+                </tr>
+            </table>
+            
+            <input type="submit" name="submit" onclick="alert('Your response has been succesfully recorded!')" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        <div class="bottomnav">
+            <div class="logo">
+                <a href="https://www.facebook.com/msinjielim/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/sinjie_00/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/SinJie00" target="_blank"><img src="img/github.png" alt="Github"></a>
+                <a href="https://wa.me/60182321688" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="link">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        <hr>
+        <br>
+        <em>Copyright &copy 2021 Lim Sin Jie. All rights reserved.</em>
+        </div>
+    </footer>
+</body>
+
+</html>
+

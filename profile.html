@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile</title>
+    <link id="style" rel="stylesheet" type="text/css" href="css/style1.css">
+    <script type="text/javascript">
+        if(sessionStorage.getItem("theme")!=null){
+             document.getElementById('style').href = 'css/'+sessionStorage.getItem("theme")+'.css';
+        }
+        function changeStyle1() {
+            var theme = document.getElementById('style');
+            theme.href = "css/style1.css";
+            sessionStorage.setItem("theme","style1");
+        };
+        function changeStyle2() {
+            var theme = document.getElementById('style');
+            theme.href = "css/style2.css";
+            sessionStorage.setItem("theme","style2");
+        };
+    </script>
+</head>
+
+<body>
+    <nav class="home">
+        <ul class="topnav">
+            <li class="toplist"><a href="home.html">Home</a></li>
+            <li class="toplist"><a href="profile.html">Profile</a></li>
+            <li class="toplist"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="wholecontainer">
+        <div id="grid">
+            <div id="profile">
+                <img src="img/profile pic.jpg" alt="Profile Picture">
+                <p class="bold-center">lim sin jie</p>
+                <p class="regular"><b>UTM Software Engineering Student</b></p>
+            </div>
+            <div id="contact">
+                <div class="block bold-center">Contact</div>
+                <span class="icon"><a href="tel:+60182321688"><img src="img/phone.png" alt="Phone"><b class="regular">+6018-2321688</b></a></span>
+                <span class="icon"><a href="mailto:limsinjie@graduate.utm.my"><img src="img/email.png" alt="Email"><b class="regular">limsinjie@graduate.utm.my</b></a></span>
+                <span class="icon"><img src="img/home.png" alt="Address"><b class="regular">Kuching, Sarawak</b></span>
+            </div> 
+            <div id="skill">
+                <div class="block bold-center">Skill</div>
+                <table>
+                    <tr>
+                        <td class="regular">HTML</td>
+                        <td>
+                            <div class="bar"><div class="skill-bar-90"></div></div>
+                        </td>
+                        <td class="regular">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">CSS</td>
+                        <td>
+                            <div class="bar"><div class="skill-bar-80"></div></div>
+                        </td>
+                        <td class="regular">80%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">Javascript</td>
+                        <td>
+                            <div class="bar"><div class="skill-bar-70"></div></div>
+                        </td>
+                        <td class="regular">70%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">PHP</td>
+                        <td>
+                            <div class="bar"><div class="skill-bar-60"></div></div>
+                        </td>
+                        <td class="regular">60%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">Java</td>
+                        <td>
+                            <div class="bar"><div class="skill-bar-90"></div></div>
+                        </td>
+                        <td class="regular">90%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">C++</td>
+                        <td>
+                            <div class="bar"><div class="skill-bar-90"></div></div>
+                        </td>
+                        <td class="regular">90%</td>
+                    </tr>
+                  </table>
+            </div>
+            <div id="language">
+                <div class="block bold-center">Language</div>
+                <table>
+                    <tr>
+                        <td class="regular">English</td>
+                        <td>
+                            <div class="bar"><div class="language-bar-100"></div></div>
+                        </td>
+                        <td class="regular">100%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">Mandarin</td>
+                        <td>
+                            <div class="bar"><div class="language-bar-100"></div></div>
+                        </td>
+                        <td class="regular">100%</td>
+                    </tr>
+                    <tr>
+                        <td class="regular">Malay</td>
+                        <td>
+                            <div class="bar"><div class="language-bar-90"></div></div>
+                        </td>
+                        <td class="regular">90%</td>
+                    </tr>
+                </table>
+            </div>
+            <div id="education">
+                <div><p class ="title">Education</p></div>
+                 <ul>
+                    <li>
+                        <div class="date">2019 - Current</div> 
+                        <div class="info">
+                            <p class="bold">Universiti Teknologi Malaysia (UTM), Johor Bahru</p>
+                            <p>Bachelor of Computer Science in Software Engineering</p>
+                            <p>CGPA: 4.00</p>
+                            <p>Sem 1: 4.00</p>
+                            <p>Sem 2: 4.00</p>
+                            <p>Sem 3: 4.00</p>
+                            <p>Sem 4: 4.00</p>
+                         </div>
+                     </li>
+                     <li>
+                        <div class="date">2018 - 2019</div>
+                        <div class="info">
+                            <p class="bold">Kolej Matrikulasi Labuan</p> 
+                            <p>Science Stream Module 2</p>
+                            <p>CGPA: 4.00</p>
+                            <p>Sem 1: 4.00</p>
+                            <p>Sem 2: 4.00</p>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="date">2013 - 2017</div>
+                        <div class="info">
+                            <p class="bold">SMK Datuk Patinggi Haji Abdul Gapor</p> 
+                            <p>SPM: 5A+ 4A 1A-</p>
+                        </div>
+                     </li>
+                 </ul>
+                 <hr>
+            </div>
+            <div id="activity">
+                <div><p class ="title">Activity</p></div>
+                 <ul>
+                    <li>
+                        <div class="date">2021</div> 
+                        <div class="info">
+                            <p>Director of UNIDC'21</p>
+                            <p>Vice Director of Career Talk With UTM Career Centre</p>
+                            <p>Mentor of Programming Clinic 2021</p>
+                            <p>Head of External Affairs Unit of Culfest'21</p>
+                            <p>Treasurer of Opera'21</p>
+                            <p>Secretary of Merak'21</p>
+                         </div>
+                     </li>
+                     <li>
+                        <div class="date">2020</div>
+                        <div class="info">
+                            <p>Student College Committee of Tun Dr. Ismail College</p> 
+                            <p>Head of Registration Unit of VMARKET</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="date">2019</div>
+                        <div class="info">
+                            <p>Consul of Chembuddies 5.0</p> 
+                        </div>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+            <div id="hobby">
+                <div><p class ="title">Hobby</p></div>
+                <ul>
+                    <li class="bold">Programming<p></li>
+                    <li class="bold">Musics</li>
+                    <li class="bold">Movies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="bottomnav">
+            <div class="logo">
+                <a href="https://www.facebook.com/msinjielim/" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/sinjie_00/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="https://github.com/SinJie00" target="_blank"><img src="img/github.png" alt="Github"></a>
+                <a href="https://wa.me/60182321688" target="_blank"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+            </div>
+            <div class="link">
+                <a href="home.html">Home</a>
+                <a href="profile.html">Profile</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        <hr>
+        <br>
+        <em>Copyright &copy 2021 Lim Sin Jie. All rights reserved.</em>
+        </div>
+    </footer>
+</body>
+
+</html>
